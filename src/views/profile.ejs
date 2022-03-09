@@ -1,0 +1,19 @@
+<%- layout('layouts/main.ejs') %>
+    <div class="card card-body" style="margin-top: 50px;">
+        <h1>Perfil</h1>
+        <h3>
+            Email:
+            <%= user.email %>
+
+        </h3>
+        <p>
+            <span style="font-weight: bold;">Contrasena</span>
+            <%= user.password %>
+                <p style="margin-top: -7px;font-weight: bold;">Contrasena cifrada de extremo a extremo</p>
+        </p>
+        <p>
+            ID:
+            <%= user._id %>
+                <p style="margin-top:-7px">generador de id unica en cada registro</p>
+        </p>
+    </div>
